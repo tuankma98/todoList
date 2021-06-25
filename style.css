@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 30px auto;
+}
+
+
+.todo h1 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color: #ff6347;
+    font-size: 60px;
+    font-style: italic;
+}
+
+#import form{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#import form input {
+    border-radius: 10px;
+    width: 70%;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+#import input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+    border-radius: 10px;
+    background-color: rgb(238, 235, 235);
+}
+
+#import form p {
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#import form p:hover {
+    opacity: 1;
+    background-color:red;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+#root {
+    margin: 40px;
+}
+
+#root ul {
+    list-style-type: none;
+}
+
+#root ul li {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    height: 40px;
+}
+
+#root ul li input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+#root ul li p {
+    font-size: 20px;
+    margin-right: auto;
+}
+
+#root ul li i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+#find {
+    padding-bottom: 30px;   
+}
+
+#find form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#find form input {
+    border-radius: 10px;
+    width: 70%;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+#find form p {
+    text-align: center;
+    width: 70px;
+    padding: 10px;
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#find input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+    border-radius: 10px;
+    background-color: rgb(238, 235, 235);
+}
+
+#find form p:hover {
+    opacity: 1;
+    background-color:red;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+.complete {
+    color: rgb(160, 160, 160);
+    text-decoration: line-through;
+}
+
+.delete,.edit {
+    opacity: 0.5;
+}
+.delete:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+.edit:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
